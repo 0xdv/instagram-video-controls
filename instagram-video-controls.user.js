@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram Video Controls
 // @namespace    instagram_video
-// @version      0.2.2
+// @version      0.2.3
 // @description  Adds standart video controls for video in Instagram
 // @homepageURL  https://github.com/0xC0FFEEC0DE/instagram-video-controls
 // @supportURL   https://github.com/0xC0FFEEC0DE/instagram-video-controls/issues
@@ -35,7 +35,7 @@
                                 
                                 // Remove overlay
                                 let article = video.closest('article');
-                                article.querySelectorAll('.QvAa1, .oujXn').forEach(trash => {
+                                article.querySelectorAll('.PyenC, .fXIG0').forEach(trash => {
                                     trash.parentNode.removeChild(trash);
                                 });
                                 
