@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram Video Controls
 // @namespace    instagram_video
-// @version      0.2.4
+// @version      0.2.5
 // @description  Adds standart video controls for video in Instagram
 // @homepageURL  https://github.com/0xC0FFEEC0DE/instagram-video-controls
 // @supportURL   https://github.com/0xC0FFEEC0DE/instagram-video-controls/issues
@@ -50,6 +50,10 @@
                     video.onvolumechange = (event) => {
                         localStorage.setItem('video_volume', event.target.volume);
                     };
+                }
+
+                if (!video.loop) {
+                    video.loop = true;
                 }
             }
         });
